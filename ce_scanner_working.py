@@ -347,7 +347,7 @@ def main():
 <style>
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap');
 *{{box-sizing:border-box;margin:0;padding:0}}
-body{{background:#0d1117;color:#cdd9e5;font-family:'Space Grotesk',sans-serif;padding:40px 16px;min-height:100vh}}
+body{{background:#397ce1;color:#cdd9e5;font-family:'Space Grotesk',sans-serif;padding:40px 16px;min-height:100vh}}
 .hdr{{max-width:860px;margin:0 auto 32px;border-bottom:1px solid #21262d;padding-bottom:20px}}
 .hdr h1{{font-size:26px;font-weight:700;color:#e6edf3}}
 .hdr p{{font-size:12px;color:#6e7681;margin-top:6px;font-family:'JetBrains Mono',monospace}}
@@ -365,11 +365,11 @@ td.fn{{font-family:'JetBrains Mono',monospace;font-size:11px;color:#484f58}}
 </style></head><body>
 <div class="hdr">
   <h1>CE Scanner — All Reports</h1>
-  <p>Total {{len(files)}} report(s) &nbsp;·&nbsp; Generated: {{generated_at}}</p>
+  <p>Total {len(files)} report(s) &nbsp;·&nbsp; Generated: {generated_at}</p>
 </div>
 <table>
   <thead><tr><th>#</th><th>Scan Time</th><th>File</th></tr></thead>
-  <tbody>{{rows}}</tbody>
+  <tbody>{rows}</tbody>
 </table>
 <div class="foot">Latest report on top &nbsp;·&nbsp; Click to open report</div>
 </body></html>"""
