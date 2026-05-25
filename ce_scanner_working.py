@@ -1,7 +1,7 @@
 """
 Chandelier Exit Scanner — GitHub Actions version
 Pine Script v6 exact port | Heikin Ashi 4H | ATR(1)×3 + ZLSMA(50)
-Output: docs/index.html (GitHub Pages)
+Output: docs/ce_signals_<timestamp>.html (GitHub Pages)
 """
 
 import yfinance as yf
@@ -304,16 +304,16 @@ def main():
     scan_time = now.strftime("%d %b %Y, %H:%M IST")
     html      = make_html(results, scan_time, is_open, total)
  
-    # Save to OUTPUT folder (auto-create if not exists)
-    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "OUTPUT")
+    # Save to docs folder (GitHub Pages publish_dir)
+    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs")
     os.makedirs(out_dir, exist_ok=True)
- 
+
     fname    = f"ce_signals_{now.strftime('%Y-%m-%d_%H-%M')}.html"
     out_path = os.path.join(out_dir, fname)
- 
+
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html)
-        
+
     print(f"  Report : {out_path}")
 
 if __name__ == "__main__":
