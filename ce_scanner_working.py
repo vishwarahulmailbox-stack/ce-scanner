@@ -313,8 +313,7 @@ def main():
  
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html)
- 
-    webbrowser.open(f"file://{out_path}")
+        
     print(f"  Report : {out_path}")
 
 if __name__ == "__main__":
