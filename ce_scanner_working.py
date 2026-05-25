@@ -303,14 +303,19 @@ def main():
 
     scan_time = now.strftime("%d %b %Y, %H:%M IST")
     html      = make_html(results, scan_time, is_open, total)
-
-    # Always write to docs/index.html for GitHub Pages
-    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs")
+ 
+    # Save to OUTPUT folder (auto-create if not exists)
+    out_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "OUTPUT")
     os.makedirs(out_dir, exist_ok=True)
-    out_path = os.path.join(out_dir, "index.html")
+ 
+    fname    = f"ce_signals_{now.strftime('%Y-%m-%d_%H-%M')}.html"
+    out_path = os.path.join(out_dir, fname)
+ 
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"Output: {out_path}")
+ 
+    webbrowser.open(f"file://{out_path}")
+    print(f"  Report : {out_path}")
 
 if __name__ == "__main__":
     main()
