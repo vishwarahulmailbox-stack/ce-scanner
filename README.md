@@ -2,7 +2,7 @@
 
 Chandelier Exit Scanner — Heikin Ashi 4H | ATR(1)×3 | ZLSMA(50)
 
-**Live:** https://vishwarahulmailbox-stack.github.io/ce-scanner
+**Live:** https://vishwarahulmailbox-stack.github.io/ce-scanner/docs
 
 ## Schedule
 - 10:00 AM IST (Mon-Fri)
