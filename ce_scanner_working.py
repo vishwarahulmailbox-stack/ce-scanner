@@ -347,15 +347,15 @@ def main():
 <style>
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap');
 *{{box-sizing:border-box;margin:0;padding:0}}
-body{{background:#397ce1;color:#cdd9e5;font-family:'Space Grotesk',sans-serif;padding:40px 16px;min-height:100vh}}
+body{{background:#0f172a;color:#e2e8f0;font-family:'Space Grotesk',sans-serif;padding:40px 16px;min-height:100vh}}
 .hdr{{max-width:860px;margin:0 auto 32px;border-bottom:1px solid #21262d;padding-bottom:20px}}
 .hdr h1{{font-size:26px;font-weight:700;color:#e6edf3}}
 .hdr p{{font-size:12px;color:#6e7681;margin-top:6px;font-family:'JetBrains Mono',monospace}}
 table{{width:100%;max-width:860px;margin:0 auto;border-collapse:collapse;border-radius:8px;overflow:hidden}}
-thead tr{{background:#161b22;border-bottom:2px solid #21262d}}
+thead tr{{background:#1e293b;border-bottom:2px solid #334155}}
 th{{padding:12px 16px;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#6e7681;text-align:left;font-family:'JetBrains Mono',monospace}}
-tbody tr{{border-bottom:1px solid #161b22;transition:background .12s}}
-tbody tr:hover{{background:#161b22}}
+tbody tr{{border-bottom:1px solid #1e293b;transition:background .12s}}
+tbody tr:hover{{background:#172033}}
 td{{padding:14px 16px;font-size:14px;vertical-align:middle}}
 td.num{{color:#484f58;font-family:'JetBrains Mono',monospace;font-size:12px;width:36px}}
 td.fn{{font-family:'JetBrains Mono',monospace;font-size:11px;color:#484f58}}
