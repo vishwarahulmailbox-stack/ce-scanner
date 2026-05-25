@@ -316,5 +316,69 @@ def main():
 
     print(f"  Report : {out_path}")
 
+    # Auto-generate index.html with all reports listed (latest first)
+    all_files = sorted(
+        [f for f in os.listdir(out_dir) if f.startswith("ce_signals_") and f.endswith(".html")],
+        reverse=True
+    )
+
+    def make_index(files, generated_at):
+        rows = ""
+        for i, f in enumerate(files):
+            try:
+                ts_part = f.replace("ce_signals_", "").replace(".html", "")
+                dt = datetime.strptime(ts_part, "%Y-%m-%d_%H-%M")
+                dt_ist = IST.localize(dt)
+                label = dt_ist.strftime("%d %b %Y, %H:%M IST")
+            except Exception:
+                label = f
+            badge = '<span style="background:#00c853;color:#000;font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;font-family:monospace;margin-left:10px">LATEST</span>' if i == 0 else ""
+            rows += f"""<tr>
+                <td class="num">{i+1}</td>
+                <td class="lbl"><a href="{f}" class="link">{label}{badge}</a></td>
+                <td class="fn">{f}</td>
+            </tr>"""
+
+        return f"""<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CE Scanner — Reports</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap');
+*{{box-sizing:border-box;margin:0;padding:0}}
+body{{background:#0d1117;color:#cdd9e5;font-family:'Space Grotesk',sans-serif;padding:40px 16px;min-height:100vh}}
+.hdr{{max-width:860px;margin:0 auto 32px;border-bottom:1px solid #21262d;padding-bottom:20px}}
+.hdr h1{{font-size:26px;font-weight:700;color:#e6edf3}}
+.hdr p{{font-size:12px;color:#6e7681;margin-top:6px;font-family:'JetBrains Mono',monospace}}
+table{{width:100%;max-width:860px;margin:0 auto;border-collapse:collapse;border-radius:8px;overflow:hidden}}
+thead tr{{background:#161b22;border-bottom:2px solid #21262d}}
+th{{padding:12px 16px;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#6e7681;text-align:left;font-family:'JetBrains Mono',monospace}}
+tbody tr{{border-bottom:1px solid #161b22;transition:background .12s}}
+tbody tr:hover{{background:#161b22}}
+td{{padding:14px 16px;font-size:14px;vertical-align:middle}}
+td.num{{color:#484f58;font-family:'JetBrains Mono',monospace;font-size:12px;width:36px}}
+td.fn{{font-family:'JetBrains Mono',monospace;font-size:11px;color:#484f58}}
+.link{{color:#58a6ff;text-decoration:none;font-weight:600}}
+.link:hover{{text-decoration:underline}}
+.foot{{max-width:860px;margin:28px auto 0;font-size:11px;color:#30363d;font-family:'JetBrains Mono',monospace;text-align:center;padding-top:16px;border-top:1px solid #21262d}}
+</style></head><body>
+<div class="hdr">
+  <h1>CE Scanner — All Reports</h1>
+  <p>Total {{len(files)}} report(s) &nbsp;·&nbsp; Generated: {{generated_at}}</p>
+</div>
+<table>
+  <thead><tr><th>#</th><th>Scan Time</th><th>File</th></tr></thead>
+  <tbody>{{rows}}</tbody>
+</table>
+<div class="foot">Latest report on top &nbsp;·&nbsp; Click to open report</div>
+</body></html>"""
+
+    index_html = make_index(all_files, now.strftime("%d %b %Y, %H:%M IST"))
+    index_path = os.path.join(out_dir, "index.html")
+    with open(index_path, "w", encoding="utf-8") as f:
+        f.write(index_html)
+    print(f"  Index  : {index_path}")
+
 if __name__ == "__main__":
     main()
