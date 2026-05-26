@@ -6,10 +6,10 @@ on:
     # 10:00 AM IST = 04:30 UTC
     # 02:00 PM IST = 08:30 UTC
     # 04:00 PM IST = 10:30 UTC
-    - cron: '30 13 * * 1-5'    # 10:00 AM IST  Mon-Fri
+    - cron: "42 13 * * 1-5"
 
 jobs:
-  scan:
+  scheduling:
     runs-on: ubuntu-latest
 
     permissions:
