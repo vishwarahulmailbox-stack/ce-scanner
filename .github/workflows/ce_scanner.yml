@@ -1,10 +1,18 @@
-name: CE Stock Scanner
+name: CE Scanner
 
 on:
   schedule:
-    - cron: "0 * * * *" # Every Hour
-  workflow_dispatch: # Run Manually with workflow dispatch
- 
+    # IST = UTC+5:30, so:
+    # 10:00 AM IST = 04:30 UTC
+    # 02:00 PM IST = 08:30 UTC
+    # 04:00 PM IST = 10:30 UTC
+    - cron: '30 4 * * 1-5'    # 10:00 AM IST  Mon-Fri
+    - cron: '30 8 * * 1-5'    # 02:00 PM IST  Mon-Fri
+    - cron: '30 10 * * 1-5'   # 04:00 PM IST  Mon-Fri
+
+  # Manual run button bhi hoga GitHub pe
+  workflow_dispatch:
+
 jobs:
   scan:
     runs-on: ubuntu-latest
