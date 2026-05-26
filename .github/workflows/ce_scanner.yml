@@ -8,9 +8,6 @@ on:
     # 04:00 PM IST = 10:30 UTC
     - cron: '30 13 * * 1-5'    # 10:00 AM IST  Mon-Fri
 
-  # Manual run button bhi hoga GitHub pe
-  workflow_dispatch:
-
 jobs:
   scan:
     runs-on: ubuntu-latest
