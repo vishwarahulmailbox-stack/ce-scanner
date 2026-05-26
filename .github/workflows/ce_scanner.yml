@@ -3,9 +3,9 @@ name: CE Scanner
 on:
   schedule:
     - cron: "0 9 * * *" 
-
+ 
 jobs:
-  scheduling:
+  scan:
     runs-on: ubuntu-latest
 
     permissions:
