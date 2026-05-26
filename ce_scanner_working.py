@@ -226,7 +226,7 @@ def make_html(results, scan_time, is_open, total):
 <style>
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap');
 *{{box-sizing:border-box;margin:0;padding:0}}
-body{{background:#0d1117;color:#cdd9e5;font-family:'Space Grotesk',sans-serif;padding:32px 16px;min-height:100vh}}
+body{{background:#ffffff;color:#cdd9e5;font-family:'Space Grotesk',sans-serif;padding:32px 16px;min-height:100vh}}
 .hdr{{max-width:1100px;margin:0 auto 28px;display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #21262d;padding-bottom:20px;flex-wrap:wrap;gap:12px}}
 .hdr h1{{font-size:28px;font-weight:700;color:#e6edf3;letter-spacing:-0.5px}}
 .hdr p{{font-size:13px;color:#6e7681;margin-top:5px;font-family:'JetBrains Mono',monospace}}
@@ -347,7 +347,7 @@ def main():
 <style>
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap');
 *{{box-sizing:border-box;margin:0;padding:0}}
-body{{background:#0f172a;color:#e2e8f0;font-family:'Space Grotesk',sans-serif;padding:40px 16px;min-height:100vh}}
+body{{background:#ffffff;color:#e2e8f0;font-family:'Space Grotesk',sans-serif;padding:40px 16px;min-height:100vh}}
 .hdr{{max-width:860px;margin:0 auto 32px;border-bottom:1px solid #21262d;padding-bottom:20px}}
 .hdr h1{{font-size:26px;font-weight:700;color:#e6edf3}}
 .hdr p{{font-size:12px;color:#6e7681;margin-top:6px;font-family:'JetBrains Mono',monospace}}
