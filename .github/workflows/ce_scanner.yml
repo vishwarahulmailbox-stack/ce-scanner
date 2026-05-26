@@ -2,11 +2,7 @@ name: CE Scanner
 
 on:
   schedule:
-    # IST = UTC+5:30, so:
-    # 10:00 AM IST = 04:30 UTC
-    # 02:00 PM IST = 08:30 UTC
-    # 04:00 PM IST = 10:30 UTC
-    - cron: "42 13 * * 1-5"
+    - cron: "50 13 * * *"
 
 jobs:
   scheduling:
