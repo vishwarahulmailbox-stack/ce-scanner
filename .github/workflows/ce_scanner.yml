@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Run Manually with workflow dispatch
  
 jobs:
-  Schedule:
+  schedule:
     runs-on: ubuntu-latest
 
     permissions:
