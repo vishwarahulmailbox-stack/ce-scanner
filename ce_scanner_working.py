@@ -229,8 +229,8 @@ def make_html(results, scan_time, is_open, total):
 body{{background:#ffffff;color:#cdd9e5;font-family:'Space Grotesk',sans-serif;padding:32px 16px;min-height:100vh}}
 .hdr{{max-width:1100px;margin:0 auto 28px;display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #21262d;padding-bottom:20px;flex-wrap:wrap;gap:12px}}
 .hdr h1{{font-size:28px;font-weight:700;color:#6e7681;letter-spacing:-0.5px}}
-.hdr p{{font-size:13px;color:#ffffff;margin-top:5px;font-family:'JetBrains Mono',monospace}}
-.meta{{text-align:right;font-family:'JetBrains Mono',monospace;font-size:12px;color:#ffffff}}
+.hdr p{{font-size:13px;color:#6e7681;margin-top:5px;font-family:'JetBrains Mono',monospace}}
+.meta{{text-align:right;font-family:'JetBrains Mono',monospace;font-size:12px;color:#6e7681}}
 .cnt{{font-size:40px;font-weight:700;color:#3fb950;font-family:'Space Grotesk',sans-serif;line-height:1}}
 .cnt.z{{color:#f85149}}
 .scanned{{font-size:11px;color:#484f58;margin-top:3px}}
@@ -350,7 +350,7 @@ def main():
 body{{background:#ffffff;color:#e2e8f0;font-family:'Space Grotesk',sans-serif;padding:40px 16px;min-height:100vh}}
 .hdr{{max-width:860px;margin:0 auto 32px;border-bottom:1px solid #21262d;padding-bottom:20px}}
 .hdr h1{{font-size:26px;font-weight:700;color:#6e7681}}
-.hdr p{{font-size:12px;color:#ffffff;margin-top:6px;font-family:'JetBrains Mono',monospace}}
+.hdr p{{font-size:12px;color:#6e7681;margin-top:6px;font-family:'JetBrains Mono',monospace}}
 table{{width:100%;max-width:860px;margin:0 auto;border-collapse:collapse;border-radius:8px;overflow:hidden}}
 thead tr{{background:#1e293b;border-bottom:2px solid #334155}}
 th{{padding:12px 16px;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#ffffff;text-align:left;font-family:'JetBrains Mono',monospace}}
