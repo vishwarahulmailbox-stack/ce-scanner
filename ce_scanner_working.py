@@ -228,16 +228,16 @@ def make_html(results, scan_time, is_open, total):
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:#ffffff;color:#cdd9e5;font-family:'Space Grotesk',sans-serif;padding:32px 16px;min-height:100vh}}
 .hdr{{max-width:1100px;margin:0 auto 28px;display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #21262d;padding-bottom:20px;flex-wrap:wrap;gap:12px}}
-.hdr h1{{font-size:28px;font-weight:700;color:#e6edf3;letter-spacing:-0.5px}}
-.hdr p{{font-size:13px;color:#6e7681;margin-top:5px;font-family:'JetBrains Mono',monospace}}
-.meta{{text-align:right;font-family:'JetBrains Mono',monospace;font-size:12px;color:#6e7681}}
+.hdr h1{{font-size:28px;font-weight:700;color:#6e7681;letter-spacing:-0.5px}}
+.hdr p{{font-size:13px;color:#ffffff;margin-top:5px;font-family:'JetBrains Mono',monospace}}
+.meta{{text-align:right;font-family:'JetBrains Mono',monospace;font-size:12px;color:#ffffff}}
 .cnt{{font-size:40px;font-weight:700;color:#3fb950;font-family:'Space Grotesk',sans-serif;line-height:1}}
 .cnt.z{{color:#f85149}}
 .scanned{{font-size:11px;color:#484f58;margin-top:3px}}
 .note{{max-width:1100px;margin:0 auto 16px;background:#161b22;border:1px solid #e3b341;border-radius:8px;padding:11px 16px;font-size:13px;color:#e3b341;font-family:'JetBrains Mono',monospace}}
 table{{width:100%;max-width:1100px;margin:0 auto;border-collapse:collapse;border-radius:8px;overflow:hidden}}
 thead tr{{background:#161b22;border-bottom:2px solid #21262d}}
-th{{padding:13px 16px;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#6e7681;text-align:left;font-family:'JetBrains Mono',monospace;white-space:nowrap}}
+th{{padding:13px 16px;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#ffffff;text-align:left;font-family:'JetBrains Mono',monospace;white-space:nowrap}}
 tbody tr{{border-bottom:1px solid #161b22;transition:background .12s}}
 tbody tr:hover{{background:#161b22}}
 td{{padding:14px 16px;font-size:14px;vertical-align:middle}}
@@ -247,7 +247,7 @@ td.price{{font-family:'JetBrains Mono',monospace;color:#79c0ff;font-size:14px;fo
 td.time{{font-family:'JetBrains Mono',monospace;font-size:13px;color:#8b949e}}
 td.zlsma{{font-family:'JetBrains Mono',monospace;color:#d2a8ff;font-size:13px}}
 td.diff{{font-family:'JetBrains Mono',monospace;font-size:13px}}
-.tv-link{{color:#e6edf3;text-decoration:none;display:inline-flex;align-items:center;gap:5px}}
+.tv-link{{color:#6e7681;text-decoration:none;display:inline-flex;align-items:center;gap:5px}}
 .tv-link:hover{{color:#58a6ff}}
 .tv-icon{{font-size:12px;color:#484f58;transition:color .15s}}
 .tv-link:hover .tv-icon{{color:#58a6ff}}
@@ -349,11 +349,11 @@ def main():
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:#ffffff;color:#e2e8f0;font-family:'Space Grotesk',sans-serif;padding:40px 16px;min-height:100vh}}
 .hdr{{max-width:860px;margin:0 auto 32px;border-bottom:1px solid #21262d;padding-bottom:20px}}
-.hdr h1{{font-size:26px;font-weight:700;color:#e6edf3}}
-.hdr p{{font-size:12px;color:#6e7681;margin-top:6px;font-family:'JetBrains Mono',monospace}}
+.hdr h1{{font-size:26px;font-weight:700;color:#6e7681}}
+.hdr p{{font-size:12px;color:#ffffff;margin-top:6px;font-family:'JetBrains Mono',monospace}}
 table{{width:100%;max-width:860px;margin:0 auto;border-collapse:collapse;border-radius:8px;overflow:hidden}}
 thead tr{{background:#1e293b;border-bottom:2px solid #334155}}
-th{{padding:12px 16px;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#6e7681;text-align:left;font-family:'JetBrains Mono',monospace}}
+th{{padding:12px 16px;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#ffffff;text-align:left;font-family:'JetBrains Mono',monospace}}
 tbody tr{{border-bottom:1px solid #1e293b;transition:background .12s}}
 tbody tr:hover{{background:#172033}}
 td{{padding:14px 16px;font-size:14px;vertical-align:middle}}
