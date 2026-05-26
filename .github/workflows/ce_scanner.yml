@@ -1,11 +1,15 @@
-name: CE Scanner
+name: CE Stock Scanner
 
 on:
   schedule:
-    - cron: "0 9 * * *" 
+    - cron: "0 * * * *" # Every Hour
+  push:
+    branches:
+      - main # On push to main branch
+  workflow_dispatch: # Run Manually with workflow dispatch
  
 jobs:
-  scan:
+  Schedule:
     runs-on: ubuntu-latest
 
     permissions:
