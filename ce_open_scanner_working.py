@@ -220,7 +220,7 @@ def make_html(results, scan_time, is_open, total):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="refresh" content="300">
-<title>CE Scanner — {scan_time}</title>
+<title>CE OPEN Scanner — {scan_time}</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap');
 *{{box-sizing:border-box;margin:0;padding:0}}
@@ -254,7 +254,7 @@ td.diff{{font-family:'JetBrains Mono',monospace;font-size:13px}}
 .foot{{max-width:1100px;margin:28px auto 0;font-size:11px;color:#30363d;font-family:'JetBrains Mono',monospace;text-align:center;padding-top:16px;border-top:1px solid #21262d}}
 </style></head><body>
 <div class="hdr">
-  <div><h1>CE Scanner</h1><p>4H · Heikin Ashi · ATR(1)×3 · ZLSMA(50) · Pine Script v6</p></div>
+  <div><h1>CE OPEN Scanner</h1><p>4H · Heikin Ashi · ATR(1)×3 · ZLSMA(50) · Pine Script v6</p></div>
   <div class="meta">
     <div class="cnt {'z' if count==0 else ''}">{count}</div>
     <div>signals found</div>
@@ -264,7 +264,7 @@ td.diff{{font-family:'JetBrains Mono',monospace;font-size:13px}}
 </div>
 {warn}{table}
 <div class="foot">
-  Click symbol → TradingView 4H chart &nbsp;·&nbsp; CE buy = direction flip short→long on HA 4H<br>
+  Click symbol → TradingView 4H chart &nbsp;·&nbsp; CE OPEN buy = direction flip short→long on HA 4H<br>
   ZLSMA = 2×linreg(close,50) − linreg(linreg(close,50),50) &nbsp;·&nbsp; Fresh signals: today + yesterday only
 </div>
 </body></html>"""
@@ -272,7 +272,7 @@ td.diff{{font-family:'JetBrains Mono',monospace;font-size:13px}}
 def main():
     is_open = bar_is_open()
     now     = datetime.now(IST)
-    print(f"CE Scanner starting — {now.strftime('%d %b %Y %I:%M %p IST')}")
+    print(f"CE OPEN Scanner starting — {now.strftime('%d %b %Y %I:%M %p IST')}")
     print(f"Bar: {'OPEN' if is_open else 'CLOSED'}")
 
     symbols = load_symbols("nse_list.csv")
@@ -341,7 +341,7 @@ def main():
 <html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CE Scanner — Reports</title>
+<title>CE OPEN Scanner — Reports</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap');
 *{{box-sizing:border-box;margin:0;padding:0}}
@@ -362,7 +362,7 @@ td.fn{{font-family:'JetBrains Mono',monospace;font-size:11px;color:#484f58}}
 .foot{{max-width:860px;margin:28px auto 0;font-size:11px;color:#30363d;font-family:'JetBrains Mono',monospace;text-align:center;padding-top:16px;border-top:1px solid #21262d}}
 </style></head><body>
 <div class="hdr">
-  <h1>CE Scanner — All Reports</h1>
+  <h1>CE OPEN Scanner — All Reports</h1>
   <p>Total {len(files)} report(s) &nbsp;·&nbsp; Generated: {generated_at}</p>
 </div>
 <table>
@@ -373,7 +373,7 @@ td.fn{{font-family:'JetBrains Mono',monospace;font-size:11px;color:#484f58}}
 </body></html>"""
 
     index_html = make_index(all_files, now.strftime("%d %b %Y, %I:%M %p IST"))
-    index_path = os.path.join(out_dir, "index.html")
+    index_path = os.path.join(out_dir, "index_open.html")
     with open(index_path, "w", encoding="utf-8") as f:
         f.write(index_html)
     print(f"  Index  : {index_path}")
