@@ -1,0 +1,40 @@
+name: CE OPEN Scanner
+
+on:
+  schedule:
+    # IST = UTC+5:30, so:
+    - cron: '30 1 * * 1-5'    # 10:00 AM IST  Mon-Fri
+
+  # Manual run button bhi hoga GitHub pe
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install yfinance pandas numpy pytz
+
+      - name: Run CE OPEN Scanner
+        run: python ce_open_scanner_working.py
+
+      - name: Commit docs to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git commit -m "CE OPEN Scanner update — ${{ github.run_number }}"
+          git push origin main
+          
