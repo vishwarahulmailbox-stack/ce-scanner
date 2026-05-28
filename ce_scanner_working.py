@@ -195,7 +195,7 @@ def make_html(results, scan_time, is_open, total):
     for i, r in enumerate(results, 1):
         badge_color = "#00c853" if r["bar"] == "Last Bar" else "#ff9100"
         sym_clean   = r['symbol'].replace("&", "%26")
-        tv_url      = f"https://www.tradingview.com/chart/?symbol=NSE%3A{sym_clean}&interval=240"
+        tv_url      = f"https://www.tradingview.com/chart/?symbol=NSE%3A{sym_clean}"
         if r["diff"] is not None:
             diff_color = "#3fb950" if r["diff"] > 0 else "#f85149"
             diff_arrow = "▲" if r["diff"] > 0 else "▼"
