@@ -4,7 +4,7 @@ on:
   schedule:
     # IST = UTC+5:30, so:
     # 02:00 PM IST = 08:30 UTC
-    - cron: '30 5 * * 1-5'    # 02:00 PM IST  Mon-Fri
+    - cron: '30 6 * * 1-5'    # 02:00 PM IST  Mon-Fri
 
   # Manual run button bhi hoga GitHub pe
   workflow_dispatch:
