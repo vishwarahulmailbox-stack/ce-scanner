@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="refresh" content="300">
+<title>CE Scanner — 28 Oct 2026, 20:49 IST</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#ffffff;color:#cdd9e5;font-family:'Space Grotesk',sans-serif;padding:32px 16px;min-height:100vh}
+.hdr{max-width:1100px;margin:0 auto 28px;display:flex;justify-content:space-between;align-items:flex-end;border-bottom:1px solid #21262d;padding-bottom:20px;flex-wrap:wrap;gap:12px}
+.hdr h1{font-size:28px;font-weight:700;color:#6e7681;letter-spacing:-0.5px}
+.hdr p{font-size:13px;color:#6e7681;margin-top:5px;font-family:'JetBrains Mono',monospace}
+.meta{text-align:right;font-family:'JetBrains Mono',monospace;font-size:12px;color:#6e7681}
+.cnt{font-size:40px;font-weight:700;color:#3fb950;font-family:'Space Grotesk',sans-serif;line-height:1}
+.cnt.z{color:#f85149}
+.scanned{font-size:11px;color:#484f58;margin-top:3px}
+.note{max-width:1100px;margin:0 auto 16px;background:#161b22;border:1px solid #e3b341;border-radius:8px;padding:11px 16px;font-size:13px;color:#e3b341;font-family:'JetBrains Mono',monospace}
+table{width:100%;max-width:1100px;margin:0 auto;border-collapse:collapse;border-radius:8px;overflow:hidden}
+thead tr{background:#161b22;border-bottom:2px solid #21262d}
+th{padding:13px 16px;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#ffffff;text-align:left;font-family:'JetBrains Mono',monospace;white-space:nowrap}
+tbody tr{border-bottom:1px solid #161b22;transition:background .12s}
+tbody tr:hover{background:#161b22}
+td{padding:14px 16px;font-size:14px;vertical-align:middle}
+td.num{color:#484f58;font-family:'JetBrains Mono',monospace;font-size:12px;width:36px}
+td.sym{font-weight:700;font-size:15px}
+td.price{font-family:'JetBrains Mono',monospace;color:#79c0ff;font-size:14px;font-weight:600}
+td.time{font-family:'JetBrains Mono',monospace;font-size:13px;color:#8b949e}
+td.zlsma{font-family:'JetBrains Mono',monospace;color:#d2a8ff;font-size:13px}
+td.diff{font-family:'JetBrains Mono',monospace;font-size:13px}
+.tv-link{color:#6e7681;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+.tv-link:hover{color:#58a6ff}
+.tv-icon{font-size:12px;color:#484f58;transition:color .15s}
+.tv-link:hover .tv-icon{color:#58a6ff}
+.badge{display:inline-block;padding:4px 11px;border-radius:5px;font-size:11px;font-weight:700;color:#000;font-family:'JetBrains Mono',monospace}
+.empty{max-width:1100px;margin:60px auto;text-align:center;color:#484f58;font-family:'JetBrains Mono',monospace}
+.foot{max-width:1100px;margin:28px auto 0;font-size:11px;color:#30363d;font-family:'JetBrains Mono',monospace;text-align:center;padding-top:16px;border-top:1px solid #21262d}
+</style></head><body>
+<div class="hdr">
+  <div><h1>CE Scanner</h1><p>4H · Heikin Ashi · ATR(1)×3 · ZLSMA(50) · Pine Script v6</p></div>
+  <div class="meta">
+    <div class="cnt ">50</div>
+    <div>signals found</div>
+    <div class="scanned">502 stocks scanned</div>
+    <div style="margin-top:8px;color:#8b949e">28 Oct 2026, 20:49 IST</div>
+  </div>
+</div>
+<table><thead><tr><th>#</th><th>Symbol</th><th>Price</th><th>Signal</th><th>Bar Time (IST)</th><th>ZLSMA (50)</th><th>Price vs ZLSMA</th></tr></thead><tbody><tr>
+            <td class="num">1</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AABBOTINDIA" target="_blank" class="tv-link">ABBOTINDIA<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹26,275.00</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹24,823.37</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹1,451.63 (5.85%)</span></td></tr><tr>
+            <td class="num">2</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AAFFLE" target="_blank" class="tv-link">AFFLE<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,420.00</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹1,333.93</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹86.07 (6.45%)</span></td></tr><tr>
+            <td class="num">3</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ABIOCON" target="_blank" class="tv-link">BIOCON<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹350.70</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹323.61</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹27.09 (8.37%)</span></td></tr><tr>
+            <td class="num">4</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ACHOLAFIN" target="_blank" class="tv-link">CHOLAFIN<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,545.20</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹1,509.66</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹35.54 (2.35%)</span></td></tr><tr>
+            <td class="num">5</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ACROMPTON" target="_blank" class="tv-link">CROMPTON<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹204.00</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹200.18</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹3.82 (1.91%)</span></td></tr><tr>
+            <td class="num">6</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ADEEPAKNTR" target="_blank" class="tv-link">DEEPAKNTR<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,488.40</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹1,462.89</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹25.51 (1.74%)</span></td></tr><tr>
+            <td class="num">7</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AENGINERSIN" target="_blank" class="tv-link">ENGINERSIN<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹257.70</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹219.53</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹38.17 (17.39%)</span></td></tr><tr>
+            <td class="num">8</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AESCORTS" target="_blank" class="tv-link">ESCORTS<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹2,706.30</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹2,645.81</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹60.49 (2.29%)</span></td></tr><tr>
+            <td class="num">9</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AEXIDEIND" target="_blank" class="tv-link">EXIDEIND<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹353.25</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹322.17</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹31.08 (9.65%)</span></td></tr><tr>
+            <td class="num">10</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AFORTIS" target="_blank" class="tv-link">FORTIS<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹759.50</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹734.04</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹25.46 (3.47%)</span></td></tr><tr>
+            <td class="num">11</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AGESHIP" target="_blank" class="tv-link">GESHIP<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,559.90</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹1,486.27</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹73.63 (4.95%)</span></td></tr><tr>
+            <td class="num">12</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AIRCON" target="_blank" class="tv-link">IRCON<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹100.49</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹98.54</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹1.95 (1.98%)</span></td></tr><tr>
+            <td class="num">13</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AKPRMILL" target="_blank" class="tv-link">KPRMILL<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,095.00</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹1,030.78</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹64.22 (6.23%)</span></td></tr><tr>
+            <td class="num">14</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ALGEINDIA" target="_blank" class="tv-link">LGEINDIA<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,691.00</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹1,600.88</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹90.12 (5.63%)</span></td></tr><tr>
+            <td class="num">15</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AMARUTI" target="_blank" class="tv-link">MARUTI<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹11,579.00</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹11,285.09</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹293.91 (2.6%)</span></td></tr><tr>
+            <td class="num">16</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AMEDANTA" target="_blank" class="tv-link">MEDANTA<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,283.00</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹1,193.38</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹89.62 (7.51%)</span></td></tr><tr>
+            <td class="num">17</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AMINDACORP" target="_blank" class="tv-link">MINDACORP<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹629.75</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹600.62</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹29.13 (4.85%)</span></td></tr><tr>
+            <td class="num">18</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ANATIONALUM" target="_blank" class="tv-link">NATIONALUM<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹323.50</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹306.01</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹17.49 (5.72%)</span></td></tr><tr>
+            <td class="num">19</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ANEULANDLAB" target="_blank" class="tv-link">NEULANDLAB<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹20,030.00</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹18,889.80</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹1,140.20 (6.04%)</span></td></tr><tr>
+            <td class="num">20</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ANHPC" target="_blank" class="tv-link">NHPC<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹74.44</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹72.25</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹2.19 (3.03%)</span></td></tr><tr>
+            <td class="num">21</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ANYKAA" target="_blank" class="tv-link">NYKAA<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹342.50</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹332.73</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹9.77 (2.94%)</span></td></tr><tr>
+            <td class="num">22</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3APATANJALI" target="_blank" class="tv-link">PATANJALI<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹369.60</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹331.89</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹37.71 (11.36%)</span></td></tr><tr>
+            <td class="num">23</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3APCBL" target="_blank" class="tv-link">PCBL<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹292.05</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹268.59</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹23.46 (8.73%)</span></td></tr><tr>
+            <td class="num">24</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3APINELABS" target="_blank" class="tv-link">PINELABS<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹161.00</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹156.20</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹4.80 (3.07%)</span></td></tr><tr>
+            <td class="num">25</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ATIINDIA" target="_blank" class="tv-link">TIINDIA<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹2,135.00</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹2,039.02</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹95.98 (4.71%)</span></td></tr><tr>
+            <td class="num">26</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ATITAGARH" target="_blank" class="tv-link">TITAGARH<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹692.50</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹647.23</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹45.27 (6.99%)</span></td></tr><tr>
+            <td class="num">27</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AUPL" target="_blank" class="tv-link">UPL<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹536.40</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹527.79</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹8.61 (1.63%)</span></td></tr><tr>
+            <td class="num">28</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AUTIAMC" target="_blank" class="tv-link">UTIAMC<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹823.00</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹808.22</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹14.78 (1.83%)</span></td></tr><tr>
+            <td class="num">29</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AVOLTAS" target="_blank" class="tv-link">VOLTAS<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,011.90</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹956.08</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹55.82 (5.84%)</span></td></tr><tr>
+            <td class="num">30</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AZEEL" target="_blank" class="tv-link">ZEEL<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹69.53</td>
+            <td><span class="badge" style="background:#00c853">Last Bar</span></td>
+            <td class="time">28 Oct 13:15</td>
+            <td class="zlsma">₹65.77</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹3.76 (5.72%)</span></td></tr><tr>
+            <td class="num">31</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AABLBL" target="_blank" class="tv-link">ABLBL<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹71.94</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹72.18</td>
+            <td class="diff"><span style="color:#f85149;font-weight:600">▼ ₹0.24 (0.33%)</span></td></tr><tr>
+            <td class="num">32</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ABLUESTARCO" target="_blank" class="tv-link">BLUESTARCO<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,598.00</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹1,549.21</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹48.79 (3.15%)</span></td></tr><tr>
+            <td class="num">33</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ACUMMINSIND" target="_blank" class="tv-link">CUMMINSIND<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹4,620.00</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹4,389.18</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹230.82 (5.26%)</span></td></tr><tr>
+            <td class="num">34</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AGLAND" target="_blank" class="tv-link">GLAND<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹3,049.00</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹2,937.55</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹111.45 (3.79%)</span></td></tr><tr>
+            <td class="num">35</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AGLENMARK" target="_blank" class="tv-link">GLENMARK<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹2,300.00</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹2,215.46</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹84.54 (3.82%)</span></td></tr><tr>
+            <td class="num">36</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AJINDALSTEL" target="_blank" class="tv-link">JINDALSTEL<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,048.10</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹1,008.90</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹39.20 (3.89%)</span></td></tr><tr>
+            <td class="num">37</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ALALPATHLAB" target="_blank" class="tv-link">LALPATHLAB<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,906.50</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹1,819.18</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹87.32 (4.8%)</span></td></tr><tr>
+            <td class="num">38</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ALICI" target="_blank" class="tv-link">LICI<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹391.45</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹385.34</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹6.11 (1.59%)</span></td></tr><tr>
+            <td class="num">39</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ALT" target="_blank" class="tv-link">LT<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹3,801.30</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹3,685.87</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹115.43 (3.13%)</span></td></tr><tr>
+            <td class="num">40</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3APPLPHARMA" target="_blank" class="tv-link">PPLPHARMA<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹231.00</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹204.29</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹26.71 (13.07%)</span></td></tr><tr>
+            <td class="num">41</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3APWL" target="_blank" class="tv-link">PWL<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹131.40</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹126.89</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹4.51 (3.55%)</span></td></tr><tr>
+            <td class="num">42</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ARAINBOW" target="_blank" class="tv-link">RAINBOW<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,204.80</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹1,197.17</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹7.63 (0.64%)</span></td></tr><tr>
+            <td class="num">43</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ARITES" target="_blank" class="tv-link">RITES<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹196.57</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹195.66</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹0.91 (0.47%)</span></td></tr><tr>
+            <td class="num">44</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ASAREGAMA" target="_blank" class="tv-link">SAREGAMA<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹522.00</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹505.75</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹16.25 (3.21%)</span></td></tr><tr>
+            <td class="num">45</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ASBFC" target="_blank" class="tv-link">SBFC<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹90.49</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹85.69</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹4.80 (5.6%)</span></td></tr><tr>
+            <td class="num">46</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ASYNGENE" target="_blank" class="tv-link">SYNGENE<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹410.85</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹386.37</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹24.48 (6.34%)</span></td></tr><tr>
+            <td class="num">47</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3ATVSMOTOR" target="_blank" class="tv-link">TVSMOTOR<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹4,239.90</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹4,047.64</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹192.26 (4.75%)</span></td></tr><tr>
+            <td class="num">48</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AUBL" target="_blank" class="tv-link">UBL<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,197.60</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹1,169.34</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹28.26 (2.42%)</span></td></tr><tr>
+            <td class="num">49</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AUNOMINDA" target="_blank" class="tv-link">UNOMINDA<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,099.90</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹1,065.63</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹34.27 (3.22%)</span></td></tr><tr>
+            <td class="num">50</td>
+            <td class="sym"><a href="https://www.tradingview.com/chart/?symbol=NSE%3AWOCKPHARMA" target="_blank" class="tv-link">WOCKPHARMA<span class="tv-icon">↗</span></a></td>
+            <td class="price">₹1,908.00</td>
+            <td><span class="badge" style="background:#ff9100">2nd Last Bar</span></td>
+            <td class="time">28 Oct 09:15</td>
+            <td class="zlsma">₹1,749.38</td>
+            <td class="diff"><span style="color:#3fb950;font-weight:600">▲ ₹158.62 (9.07%)</span></td></tr></tbody></table>
+<div class="foot">
+  Click symbol → TradingView 4H chart &nbsp;·&nbsp; CE buy = direction flip short→long on HA 4H<br>
+  ZLSMA = 2×linreg(close,50) − linreg(linreg(close,50),50) &nbsp;·&nbsp; Fresh signals: today + yesterday only
+</div>
+</body></html>
